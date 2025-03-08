@@ -28,7 +28,9 @@ class UserCard extends Component {
       isFemale,
       socialStats,
     } = this.state;
+    
     const userColor = isFemale ? "white" : "rgb(27, 27, 27)";
+
     return (
       <article className={styles.cardUser}>
         <img src={imageUrl} alt="Model"></img>
