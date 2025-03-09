@@ -6,16 +6,18 @@ class UserCard extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      imageUrl: photo,
-      firstName: "Amanda",
-      lastName: "Taylor",
-      position: "Model",
-      isFemale: true,
-      socialStats: {
-        views: 1388,
-        like: 970,
-        followers: 554,
-      },
+      user:{
+        imageUrl: photo,
+        firstName: "Amanda",
+        lastName: "Taylor",
+        position: "Model",
+        isFemale: true,
+        socialStats: {
+          views: 1388,
+          like: 970,
+          followers: 554,
+        },
+      }
     };
   }
 
@@ -27,7 +29,7 @@ class UserCard extends Component {
       position,
       isFemale,
       socialStats,
-    } = this.state;
+    } = this.state.user;
     
     const userColor = isFemale ? "white" : "rgb(27, 27, 27)";
 
